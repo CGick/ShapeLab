@@ -39,7 +39,7 @@ public class RightTriangle implements Shape {
 	}
 	private double getHypotenuse(){
 		double val;
-		val = length * length * width * width;
+		val = length * length + width * width;
 		hypotenuse = Math.sqrt(val);
 		return hypotenuse;
 	}
