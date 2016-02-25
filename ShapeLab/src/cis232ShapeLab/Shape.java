@@ -1,7 +1,9 @@
 package cis232ShapeLab;
 
-public interface Shape {
+import java.text.DecimalFormat;
 
+public interface Shape {
+	DecimalFormat format = new DecimalFormat("#,##0.00");
 	double getArea();
 	double getPerimeter();
 }

@@ -1,8 +1,9 @@
 package cis232ShapeLab;
-import java.lang.Math;
+
 
 public class RightTriangle implements Shape {
 
+	
 	
 	private double length;
 	private double width;
@@ -44,7 +45,8 @@ public class RightTriangle implements Shape {
 		return hypotenuse;
 	}
 	public String toString(){
-		String toString = "The triangle has perimeter of: " +String.valueOf(getPerimeter()) + " and area of: " +String.valueOf(getArea());
+		String toString = "The triangle has perimeter of: " +format.format(getPerimeter()) +
+				" and area of: " +format.format(getArea());
 		return toString;
 	}
 }

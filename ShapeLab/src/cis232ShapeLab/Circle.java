@@ -3,6 +3,7 @@ import java.lang.Math;
 
 public class Circle implements Shape {
 
+	
 	private double radius;
 	
 	public Circle(){
@@ -20,7 +21,8 @@ public class Circle implements Shape {
 		return 2*Math.PI*radius;
 	}
 	public String toString(){
-		String toString = "The circle has perimeter of: " +String.valueOf(getPerimeter()) + " and area of: " +String.valueOf(getArea());
+		String toString = "The circle has perimeter of: " +format.format(getPerimeter()) + 
+				" and area of: " +format.format(getArea());
 		return toString;
 	}
 
