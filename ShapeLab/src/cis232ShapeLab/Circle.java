@@ -16,7 +16,6 @@ public class Circle implements Shape {
 		return area;
 	}
 
-	@Override
 	public double getPerimeter() {
 		return 2*Math.PI*radius;
 	}
