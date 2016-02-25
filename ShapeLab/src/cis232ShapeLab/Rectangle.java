@@ -40,5 +40,9 @@ public class Rectangle implements Shape {
 		
 		return (length * 2) + (width * 2);
 	}
+	public String toString(){
+		String toString = "The rectangle has perimeter of: " +String.valueOf(getPerimeter()) + " and area of: " +String.valueOf(getArea());
+		return toString;
+	}
 
 }

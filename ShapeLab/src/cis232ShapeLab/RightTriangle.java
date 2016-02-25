@@ -43,4 +43,8 @@ public class RightTriangle implements Shape {
 		hypotenuse = Math.sqrt(val);
 		return hypotenuse;
 	}
+	public String toString(){
+		String toString = "The triangle has perimeter of: " +String.valueOf(getPerimeter()) + " and area of: " +String.valueOf(getArea());
+		return toString;
+	}
 }

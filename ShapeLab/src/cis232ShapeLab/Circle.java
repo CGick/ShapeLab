@@ -19,5 +19,9 @@ public class Circle implements Shape {
 	public double getPerimeter() {
 		return 2*Math.PI*radius;
 	}
+	public String toString(){
+		String toString = "The circle has perimeter of: " +String.valueOf(getPerimeter()) + " and area of: " +String.valueOf(getArea());
+		return toString;
+	}
 
 }
