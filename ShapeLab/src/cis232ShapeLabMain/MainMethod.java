@@ -39,14 +39,17 @@ public class MainMethod {
 				Rectangle r = new Rectangle(l,w);
 				shapes.add(r);
 			}
-			if(shapeName.equalsIgnoreCase("Triangle")){
+			if(shapeName.equalsIgnoreCase("RightTriangle")){
 				double l = Double.parseDouble(st.nextToken());
 				double w = Double.parseDouble(st.nextToken());
-				Rectangle t = new Rectangle(l,w);
-				shapes.add(t);
+				RightTriangle rt = new RightTriangle(l,w);
+				shapes.add(rt);
 			}
 		}
 		
+		for(Shape out: shapes){
+			System.out.println(out);
+		}
 
 	}
 
